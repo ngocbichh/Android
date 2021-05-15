@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "341134121718",
+    "firebase_url": "https://monanngonviet-43902.firebaseio.com",
+    "project_id": "monanngonviet-43902",
+    "storage_bucket": "monanngonviet-43902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341134121718:android:68bb1cec04a6f1e8f12ad7",
+        "android_client_info": {
+          "package_name": "com.example.monanvietngon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341134121718-mjhgj4gbhegi84l9b9tb0aj8bqqsf0st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBzWl_KCesJTKIRwjxxzWA74RpOX42u3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341134121718-vseveh7ik7djfg8n8dr5i1f4h8nv4die.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

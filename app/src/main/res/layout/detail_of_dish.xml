@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@android:color/white"
+    tools:context=".views.activity.DetailOfDish">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btnBackInDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_button_back"
+            android:background="@android:color/transparent">
+        </Button>
+        <TextView
+            android:id="@+id/txtNameOfDish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of dish"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            >
+
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_like_white"
+            android:background="@android:color/transparent">
+
+        </Button>
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_baseline_report_problem_24"
+            >
+
+        </Button>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="horizontal"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_supervisor_account_24"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/UIsoNguoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số lượng người"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/txtSoNguoi"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="70dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line2"
+                android:orientation="horizontal"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_money"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá tiền"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/holo_purple"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/holo_purple" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="15dp"
+                    android:text="VND" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line3"
+                android:orientation="horizontal"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_nguyen_lieu">
+                </ImageView>
+                <TextView
+                    android:id="@+id/txtNguyenLieu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyên liệu"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/holo_red_light"
+                    ></TextView>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_ingredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtNguyenLieu"
+                >
+                <!--            <ListView-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content">-->
+
+                <!--            </ListView>-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line5"
+                android:orientation="horizontal"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line6"
+                android:orientation="horizontal"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line7"
+                android:orientation="horizontal"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_gia_vi"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gia vị"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/holo_green_light">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_spice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line8"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_step"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Các bước thực hiện"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/comment"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/scrollView"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_comment_24">
+
+                </ImageView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:text="Bình luận">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/txtComment"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/ic_launcher_background">
+
+                </ImageView>
+                <EditText
+                    android:id="@+id/edtiComment"
+                    android:layout_width="300dp"
+
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Gửi"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@android:color/holo_orange_light"
+
+                    >
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/continueComment"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/scrollView"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:text="Xem tiếp bình luận">
+
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

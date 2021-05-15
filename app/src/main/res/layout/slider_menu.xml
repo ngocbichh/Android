@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:src="@drawable/ic_baseline_navigate_before_48"
+        android:background="?android:selectableItemBackground"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:src="@drawable/ic_baseline_navigate_next_48"
+        android:background="?android:selectableItemBackground"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

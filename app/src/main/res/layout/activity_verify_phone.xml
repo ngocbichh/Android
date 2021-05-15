@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.VerifyPhoneActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:drawableLeft="@drawable/ic_button_back"></Button>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập bằng số điện thoại"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="361dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="20dp"
+        android:text="Một mã OTP đã được gửi đến số điện thoại của bạn. Mã OTP được nhập tự động,nếu không bạn có thể nhập mã thủ công."
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="339dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="35dp"
+        android:digits="0123456789"
+        android:hint="enter code"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Gửi"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+
+
+</LinearLayout>

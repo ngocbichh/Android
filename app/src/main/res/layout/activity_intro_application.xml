@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".views.activity.IntroApplication">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="center"
+            android:src="@drawable/background">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="  “Món Ăn Việt Ngon” là ứng dụng giới thiệu các công thức nấu ăn đơn giản dễ làm."
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:text="  Tất cả công thức nấu ăn đều có hình ảnh, các bước hướng dẫn cụ thể chi tiết nên khi xem bạn có thể hiểu dễ dàng và dễ dàng nấu món ăn cho bản thân và người thân với các món ăn phong phú trên Món Ngon Việt Nam. Với chức năng tìm kiếm từ nguyên liệu và tên món ăn thì việc tìm kiếm những món mình thích không thể nào đơn giản hơn. Và khi các bạn muốn bắt tay vào bếp thì với chức năng lưu lại các công thức yêu thích, bạn có thể tạo ra một danh sách các công thức, món ăn riêng cho mình."
+            >
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Quay lại"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_orange_light">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>
